@@ -41,22 +41,29 @@
     <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-booking data-days="7" data-closed="" data-slots="09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00" data-message="Здравствуйте! Хочу заказать: {услуга}, {день} к {время}. Подскажите, пожалуйста, детали." onsubmit="return false">
       <h2 class="s-widget__title">Заказать букет</h2>
       <fieldset><legend>Услуга</legend>
-        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Букет роз 21 шт" data-price="1980" data-from="" data-min="" checked><span>Букет роз 21 шт</span><b>1 980 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Цветочная композиция &quot;Букет из роз&quot;" data-price="1470" data-from="" data-min=""><span>Цветочная композиция "Букет из роз"</span><b>1 470 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Цветочная композиция" data-price="8500" data-from="" data-min=""><span>Цветочная композиция</span><b>8 500 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Цветочная композиция &quot; Эквадорские розы &quot;" data-price="3800" data-from="" data-min=""><span>Цветочная композиция " Эквадорские розы "</span><b>3 800 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Цветочная композиция &quot; Роза плая бланка &quot;" data-price="4550" data-from="" data-min=""><span>Цветочная композиция " Роза плая бланка "</span><b>4 550 ₽</b></label></div>
+        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Букет роз 21 шт" data-price="1980" data-from="" data-min="" checked><span>Букет роз 21 шт</span><b>1 980 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Цветочная композиция &quot;Букет из роз&quot;" data-price="1470" data-from="" data-min=""><span>Цветочная композиция "Букет из роз"</span><b>1 470 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Цветочная композиция" data-price="8500" data-from="" data-min=""><span>Цветочная композиция</span><b>8 500 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Цветочная композиция &quot; Эквадорские розы &quot;" data-price="3800" data-from="" data-min=""><span>Цветочная композиция " Эквадорские розы "</span><b>3 800 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Цветочная композиция &quot; Роза плая бланка &quot;" data-price="4550" data-from="" data-min=""><span>Цветочная композиция " Роза плая бланка "</span><b>4 550 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="5" data-name="Цветочная композиция &quot; Букет невесты&quot;" data-price="1470" data-from="" data-min=""><span>Цветочная композиция " Букет невесты"</span><b>1 470 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="6" data-name="Цветочная композиция &quot;101 Роза &quot;" data-price="8080" data-from="" data-min=""><span>Цветочная композиция "101 Роза "</span><b>8 080 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="7" data-name="Цветочная композиция &quot; Роза, кения &quot;" data-price="2650" data-from="" data-min=""><span>Цветочная композиция " Роза, кения "</span><b>2 650 ₽</b></label></div>
       </fieldset>
       <fieldset><legend>День</legend><div class="s-chips" data-s-days></div></fieldset>
       <fieldset><legend>Время</legend><div class="s-chips" data-s-times></div></fieldset>
+      <figure class="s-pick" hidden><img src="" alt=""><figcaption></figcaption></figure>
       <div class="s-bubble" aria-live="polite"><span class="s-bubble__label">Ваше сообщение</span><p data-s-bubble></p></div>
       <div class="s-send">
         <a class="s-btn s-btn--wide" data-s-msg="whatsapp" href="#">Заказать в WhatsApp</a>
         <a class="s-btn s-btn--ghost" data-s-msg="telegram" href="#">Telegram</a>
       </div>
-      <p class="s-send__note" data-s-copied hidden>Текст скопирован – вставьте его в чат.</p>
+      <p class="s-send__hint">В WhatsApp текст заказа подставится сам. Если выберете Telegram – текст скопируется: в чате нажмите «Вставить» и отправьте.</p>
+      <p class="s-send__note" data-s-copied hidden>Готово: текст заказа скопирован. Откройте чат, нажмите «Вставить» и отправьте.</p>
       
     </form></div>
     <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/hero.webp" alt="Розы в коробках" decoding="async" fetchpriority="high"></figure>
   </section>
 
   
+
+  <section class="s-section s-reveal" id="katalog">
+    <header class="s-section__head"><h2>Букеты с ценами</h2><p>Нажмите на букет – он появится в форме заказа.</p></header>
+    <div class="s-cat"><figure data-kat="Букет роз 21 шт" tabindex="0" role="button"><img src="assets/kat-01.webp" alt="Букет роз 21 шт" loading="lazy" decoding="async"><figcaption><span>Букет роз 21 шт</span><b>1 980 ₽</b></figcaption></figure><figure data-kat="Цветочная композиция &quot;Букет из роз&quot;" tabindex="0" role="button"><img src="assets/kat-02.webp" alt="Цветочная композиция &quot;Букет из роз&quot;" loading="lazy" decoding="async"><figcaption><span>Цветочная композиция &quot;Букет из роз&quot;</span><b>1 470 ₽</b></figcaption></figure><figure data-kat="Цветочная композиция" tabindex="0" role="button"><img src="assets/kat-03.webp" alt="Цветочная композиция" loading="lazy" decoding="async"><figcaption><span>Цветочная композиция</span><b>8 500 ₽</b></figcaption></figure><figure data-kat="Цветочная композиция &quot; Эквадорские розы &quot;" tabindex="0" role="button"><img src="assets/kat-04.webp" alt="Цветочная композиция &quot; Эквадорские розы &quot;" loading="lazy" decoding="async"><figcaption><span>Цветочная композиция &quot; Эквадорские розы &quot;</span><b>3 800 ₽</b></figcaption></figure><figure data-kat="Цветочная композиция &quot; Роза плая бланка &quot;" tabindex="0" role="button"><img src="assets/kat-05.webp" alt="Цветочная композиция &quot; Роза плая бланка &quot;" loading="lazy" decoding="async"><figcaption><span>Цветочная композиция &quot; Роза плая бланка &quot;</span><b>4 550 ₽</b></figcaption></figure><figure data-kat="Цветочная композиция &quot; Букет невесты&quot;" tabindex="0" role="button"><img src="assets/kat-06.webp" alt="Цветочная композиция &quot; Букет невесты&quot;" loading="lazy" decoding="async"><figcaption><span>Цветочная композиция &quot; Букет невесты&quot;</span><b>1 470 ₽</b></figcaption></figure><figure data-kat="Цветочная композиция &quot;101 Роза &quot;" tabindex="0" role="button"><img src="assets/kat-07.webp" alt="Цветочная композиция &quot;101 Роза &quot;" loading="lazy" decoding="async"><figcaption><span>Цветочная композиция &quot;101 Роза &quot;</span><b>8 080 ₽</b></figcaption></figure><figure data-kat="Цветочная композиция &quot; Роза, кения &quot;" tabindex="0" role="button"><img src="assets/kat-08.webp" alt="Цветочная композиция &quot; Роза, кения &quot;" loading="lazy" decoding="async"><figcaption><span>Цветочная композиция &quot; Роза, кения &quot;</span><b>2 650 ₽</b></figcaption></figure></div>
+  </section>
 
   <section class="s-section s-reveal" id="prices">
     <header class="s-section__head"><h2>Цены</h2><p>Цены с карточки на Яндекс.Картах. Точный состав и сумму подтвердим в сообщении.</p></header>
@@ -128,5 +135,30 @@
 <footer class="s-foot"><p>Элит Роуз · Иркутск</p><p>Цветы с доставкой по Иркутску</p></footer>
 <nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Заказать букет</a><a class="s-btn s-btn--ghost" href="tel:+73952671062">Позвонить</a></nav>
 <script src="style.js" defer></script>
+<script>
+// правка Юли: выбор букета в форме или клик по карточке каталога меняет главное фото
+(function () {
+  var M = {"букет роз 21 шт":"assets/kat-01.webp","цветочная композиция \"букет из роз\"":"assets/kat-02.webp","цветочная композиция":"assets/kat-03.webp","цветочная композиция \" эквадорские розы \"":"assets/kat-04.webp","цветочная композиция \" роза плая бланка \"":"assets/kat-05.webp","цветочная композиция \" букет невесты\"":"assets/kat-06.webp","цветочная композиция \"101 роза \"":"assets/kat-07.webp","цветочная композиция \" роза, кения \"":"assets/kat-08.webp"}, N = {"букет роз 21 шт":"Букет роз 21 шт","цветочная композиция \"букет из роз\"":"Цветочная композиция \"Букет из роз\"","цветочная композиция":"Цветочная композиция","цветочная композиция \" эквадорские розы \"":"Цветочная композиция \" Эквадорские розы \"","цветочная композиция \" роза плая бланка \"":"Цветочная композиция \" Роза плая бланка \"","цветочная композиция \" букет невесты\"":"Цветочная композиция \" Букет невесты\"","цветочная композиция \"101 роза \"":"Цветочная композиция \"101 Роза \"","цветочная композиция \" роза, кения \"":"Цветочная композиция \" Роза, кения \""}, imgs = document.querySelectorAll(".s-hero__photo img, .s-hero__bg img");
+  var key = function (el) { return ((el && (el.dataset.name || el.dataset.label || el.dataset.kat)) || "").toLowerCase(); };
+  var pv = document.querySelector(".s-pick"), pvImg = pv && pv.querySelector("img"), pvCap = pv && pv.querySelector("figcaption");
+  var show = function (n) {
+    var src = M[n]; if (pv) pv.hidden = !src; if (!src) return;
+    imgs.forEach(function (i) { i.removeAttribute("srcset"); i.src = src; });
+    if (pvImg) { pvImg.src = src; pvCap.textContent = N[n] || ""; }
+  };
+  document.addEventListener("change", function (e) { if (e.target.matches("input[type=radio]")) show(key(e.target)); });
+  document.querySelectorAll("[data-kat]").forEach(function (f) {
+    var pick = function () {
+      var n = key(f), r = Array.prototype.find.call(document.querySelectorAll(".s-widget input[type=radio]"), function (x) { return key(x) === n; });
+      if (r) { r.checked = true; r.dispatchEvent(new Event("change", { bubbles: true })); }
+      show(n); var w = document.getElementById("widget"); if (w) w.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    f.addEventListener("click", pick); f.addEventListener("keydown", function (e) { if (e.key === "Enter") pick(); });
+  });
+  // при загрузке главное фото не трогаем: в форме показываем превью уже выбранного букета
+  var first = document.querySelector(".s-widget input[type=radio]:checked"), n0 = key(first);
+  if (pv && M[n0]) { pv.hidden = false; pvImg.src = M[n0]; pvCap.textContent = N[n0] || ""; }
+})();
+</script>
 </body>
 </html>
